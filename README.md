@@ -30,7 +30,7 @@ For detailed information on how to upload the JAR that contains your custom serv
 
 Invocation
 ----------
-Since this method verifies the authenticity of in-app purchase receipts from the iOS App Store, it seems reasonable to assume that it will be mostly invoked from iOS. To make that easier, you will probably want to use the StackMob iOS SDK (available from http://developer.stackmob.com). To invoke this verify_receipt method using the version 0.5.x series of StackMob iOS SDKs, use code like this in your project's `SKPaymentTransactionObserver`:
+Since this method verifies the authenticity of in-app purchase receipts from the iOS App Store, it seems reasonable to assume that it will be mostly invoked from iOS. To make invocation from iOS easier, you will probably want to use the StackMob iOS SDK (available from http://developer.stackmob.com). To invoke the `verify_receipt` method using the version 0.5.x series of StackMob iOS SDKs, use code like this in your project's `SKPaymentTransactionObserver`:
 
 ```objective-c
 - (void) completeTransaction: (SKPaymentTransaction *)transaction {
