@@ -102,10 +102,10 @@ Since this method verifies the authenticity of in-app purchase receipts from the
 
 As of this writing, StackMob has recently introduced a newer version 1.x series of their iOS SDK which has much different syntax. I have not yet upgraded to this new series, and have not investigated how custom server code can be called from it. If you get this working with StackMob's version 1.x series iOS SDK, please send me some sample code so I can include it in this document.
 
+Improvements
+------------
+Please help me improve this code! If you have improvements or bug fixes, please fork this project and issue a pull request. Thanks in advance for your help.
+
 Support
 -------
 I don't offer support for this code. If you have questions, the best place to get help is probably StackMob support.
-
-Bugs
-----
-Please help me improve this code! If you have improvements or bug fixes, please fork this project and issue a pull request. Thanks in advance for your help.
