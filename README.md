@@ -7,6 +7,10 @@ After installing StackMobIAPReceiptVerification as custom server code on your St
 
 If the receipt is successfully verified, the method returns the receipt verification status and the transaction data that was stored in the receipt. If there is a problem with verification, an error will be returned.
 
+Configuring the Project
+-----------------------
+Before building the project, you will need to uncomment the appropriate definition of `validationServerURL` in `VerifyReceipt.java`. During testing, uncomment the line that defines the URL to the sandbox server. When building for production, you will want to uncomment the line that defines the production server instead.
+
 Building the Project
 --------------------
 Since this project will be mostly used by iOS developers who use Objective C, it may not be obvious how to build this java project. Detailed instructions are beyond the scope of this document, but you will need to have a JDK (http://www.oracle.com/technetwork/java/javase/downloads/index.html) installed on your development machine, as well as the Maven project management tool (http://maven.apache.org). Once those are installed, you can build the JAR that will need to be uploaded to StackMob from the terminal:
@@ -56,8 +60,10 @@ Since this method verifies the authenticity of in-app purchase receipts from the
                         NSDictionary *dictionary = result;
                         productIdentifier = [dictionary objectForKey:@"product_id"];
 
-                        // For a list of all other information in the returned NSDictionary, please see Apple's
-                        // In-App Purchase
+                        // For a list of all other information in the returned NSDictionary, please see the
+                        // "Verifying Store Receipts" section of Apple's In-App Purchase Programming Guide.
+                        // There is a dictionary entry for each purchase info key returned by Apple's verification
+                        // server.
                     }
 
                     // Now that it is known which product was purchased (from the product identifier), do whatever is
