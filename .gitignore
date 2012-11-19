@@ -1,0 +1,25 @@
+#####
+# OS X temporary files that should never be committed
+
+.DS_Store
+*.swp
+*.lock
+profile
+
+####
+# IntelliJ - Java IDE
+#
+# Files used by IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+target/
+
+####
+# Java build files
+*.jar
+*.war
+*.ear
+*.class
+
